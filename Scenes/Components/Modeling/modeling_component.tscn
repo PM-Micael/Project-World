@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cgoq85ptyarr7"]
+
+[ext_resource type="Script" uid="uid://dywsykdfcf8nc" path="res://Scenes/Components/Modeling/modeling_component.gd" id="1_8f56y"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_bb8pe"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_eyjgy"]
+size = Vector3(0.5054321, 0.24890137, 0.4210205)
+
+[node name="Modeling" type="Node3D" unique_id=362869]
+script = ExtResource("1_8f56y")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=558002885]
+
+[node name="Body" type="MeshInstance3D" parent="." unique_id=525022354]
+mesh = SubResource("CapsuleMesh_bb8pe")
+
+[node name="Eyes" type="MeshInstance3D" parent="." unique_id=1768566506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018707275, 0.37554932, 0.47880518)
+mesh = SubResource("BoxMesh_eyjgy")

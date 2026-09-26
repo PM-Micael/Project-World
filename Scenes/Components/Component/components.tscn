@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dhcev25trige0"]
+
+[ext_resource type="PackedScene" uid="uid://cgoq85ptyarr7" path="res://Scenes/Components/Modeling/modeling_component.tscn" id="1_c7es6"]
+[ext_resource type="Script" uid="uid://cja8f0b2wuljh" path="res://Scenes/Components/Component/component_manager.gd" id="1_gabk2"]
+[ext_resource type="PackedScene" uid="uid://cll17p6k4esry" path="res://Scenes/Components/Attack/attack_component.tscn" id="2_gabk2"]
+[ext_resource type="PackedScene" uid="uid://dt5ph6tn63411" path="res://Scenes/Components/Collision/collision_component.tscn" id="2_lc27c"]
+[ext_resource type="PackedScene" uid="uid://np5kp1q0fmbd" path="res://Scenes/Components/Movment/movment_component.tscn" id="5_8i73c"]
+[ext_resource type="PackedScene" uid="uid://cqgow8ujvt7xc" path="res://Scenes/Components/Health/health_component.tscn" id="6_8i73c"]
+[ext_resource type="PackedScene" uid="uid://ckyssqtpspauy" path="res://Scenes/Components/Targeting/targeting_component.tscn" id="7_6i2am"]
+[ext_resource type="Script" uid="uid://d3a3mkfxwch2w" path="res://Scenes/Components/Targeting/targeting_component.gd" id="8_yxlb8"]
+[ext_resource type="PackedScene" uid="uid://ci8g16ty5boyi" path="res://Scenes/Components/Targetable/targetable_component.tscn" id="9_ubruj"]
+[ext_resource type="Script" uid="uid://dowvhl7s6vs3w" path="res://Scenes/Components/Targetable/targetable_component.gd" id="10_j460u"]
+
+[node name="Components" type="Node3D" unique_id=841989074]
+script = ExtResource("1_gabk2")
+
+[node name="Attack" parent="." unique_id=2065422844 instance=ExtResource("2_gabk2")]
+
+[node name="Collision" parent="." unique_id=1299929161 instance=ExtResource("2_lc27c")]
+
+[node name="Health" parent="." unique_id=933311464 instance=ExtResource("6_8i73c")]
+
+[node name="Movment" parent="." unique_id=1161008919 instance=ExtResource("5_8i73c")]
+
+[node name="Targeting" parent="." unique_id=110068792 instance=ExtResource("7_6i2am")]
+script = ExtResource("8_yxlb8")
+
+[node name="Targetable" parent="." unique_id=247174669 instance=ExtResource("9_ubruj")]
+script = ExtResource("10_j460u")
+
+[node name="Modeling" parent="." unique_id=1978817339 instance=ExtResource("1_c7es6")]

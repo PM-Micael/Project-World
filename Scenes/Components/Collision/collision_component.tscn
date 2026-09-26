@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dt5ph6tn63411"]
+
+[ext_resource type="Script" uid="uid://qi74blur3vqa" path="res://Scenes/Components/Component/collision_component.gd" id="1_il76x"]
+
+[node name="Collision" type="Node3D" unique_id=1299929161]
+script = ExtResource("1_il76x")
