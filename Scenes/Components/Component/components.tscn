@@ -13,6 +13,12 @@
 
 [node name="Components" type="Node3D" unique_id=841989074]
 script = ExtResource("1_gabk2")
+components = Dictionary[String, bool]({
+"Attack": false,
+"Collision": false,
+"Modeling": false,
+"Movment": false
+})
 
 [node name="Attack" parent="." unique_id=2065422844 instance=ExtResource("2_gabk2")]
 

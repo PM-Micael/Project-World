@@ -2,10 +2,13 @@ extends Node3D
 class_name ComponentManager
 
 @export var components: Dictionary[String, bool] = {
-	"Modeling" : false,
+	"Modeling" : true,
 	"Attack" : false,
+	"Health" : false,
 	"Movment" : false,
-	"Collision" : false
+	"Collision" : false,
+	"Targeting" : false,
+	"Targetable" : false
 }
 
 var modeling: ModelingComponent:

@@ -5,5 +5,12 @@
 
 [node name="Steve" type="Node3D" unique_id=1241376317]
 script = ExtResource("1_sd5ci")
+is_player_entity = true
 
 [node name="Components" parent="." unique_id=841989074 instance=ExtResource("1_htxi3")]
+components = Dictionary[String, bool]({
+"Attack": true,
+"Collision": true,
+"Modeling": true,
+"Movment": true
+})
