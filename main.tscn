@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d2ob08d6wbq6v"]
 
 [ext_resource type="PackedScene" uid="uid://do4v8wy66obpx" path="res://Scenes/Entities/Steve/steve.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://yevv53xiyab6" path="res://Scenes/Camera/camera.gd" id="2_camscript"]
 
 [sub_resource type="Sky" id="Sky_1"]
 
@@ -35,3 +36,4 @@ shape = SubResource("BoxShape3D_ground")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2057383994]
 transform = Transform3D(1, 0, 0, 0, 0.7306757, 0.6827247, 0, -0.6827247, 0.7306757, 0, 2.9538064, 1.7535825)
+script = ExtResource("2_camscript")
