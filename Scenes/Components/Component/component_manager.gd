@@ -39,6 +39,8 @@ var health: HealthComponent:
 	get:
 		return get_node_or_null("Health")
 
+var clickable
+
 func _ready() -> void:
 	var nodes = get_children()
 	for node in nodes:

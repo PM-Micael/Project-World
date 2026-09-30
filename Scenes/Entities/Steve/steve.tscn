@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dhcev25trige0" path="res://Scenes/Components/Component/components.tscn" id="1_htxi3"]
 [ext_resource type="Script" uid="uid://b3vicndrrr3cj" path="res://Scenes/Entities/Entity/entity.gd" id="1_sd5ci"]
 
-[node name="Steve" type="Node3D" unique_id=1241376317]
+[node name="Steve" type="CharacterBody3D" unique_id=1241376317]
 script = ExtResource("1_sd5ci")
 is_player_entity = true
 

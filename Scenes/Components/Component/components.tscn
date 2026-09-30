@@ -10,8 +10,6 @@
 [ext_resource type="Script" uid="uid://d3a3mkfxwch2w" path="res://Scenes/Components/Targeting/targeting_component.gd" id="8_yxlb8"]
 [ext_resource type="PackedScene" uid="uid://ci8g16ty5boyi" path="res://Scenes/Components/Targetable/targetable_component.tscn" id="9_ubruj"]
 [ext_resource type="Script" uid="uid://dowvhl7s6vs3w" path="res://Scenes/Components/Targetable/targetable_component.gd" id="10_j460u"]
-[ext_resource type="PackedScene" uid="uid://swqeaintn27v" path="res://Scenes/Components/Clickable/clickable.tscn" id="11_r3yib"]
-[ext_resource type="Script" uid="uid://bkka48abhcd2o" path="res://Scenes/Components/Clickable/clickable_component.gd" id="12_01m47"]
 
 [node name="Components" type="Node3D" unique_id=841989074]
 script = ExtResource("1_gabk2")
@@ -37,6 +35,3 @@ script = ExtResource("8_yxlb8")
 script = ExtResource("10_j460u")
 
 [node name="Modeling" parent="." unique_id=1978817339 instance=ExtResource("1_c7es6")]
-
-[node name="Clickable" parent="." unique_id=1665076252 instance=ExtResource("11_r3yib")]
-script = ExtResource("12_01m47")

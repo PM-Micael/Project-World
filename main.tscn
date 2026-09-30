@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://do4v8wy66obpx" path="res://Scenes/Entities/Steve/steve.tscn" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://yevv53xiyab6" path="res://Scenes/Camera/camera.gd" id="2_camscript"]
+[ext_resource type="PackedScene" path="res://Scenes/World/test_area.tscn" id="3_testarea"]
 
 [sub_resource type="Sky" id="Sky_1"]
 
@@ -32,8 +33,19 @@ mesh = SubResource("BoxMesh_ground")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=811734202]
 shape = SubResource("BoxShape3D_ground")
 
+[node name="TestArea" parent="." unique_id=1936219134 instance=ExtResource("3_testarea")]
+
 [node name="Steve" parent="." unique_id=647788916 instance=ExtResource("1_ig7tw")]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2057383994]
 transform = Transform3D(1, 0, 0, 0, 0.7306757, 0.6827247, 0, -0.6827247, 0.7306757, 0, 2.9538064, 1.7535825)
 script = ExtResource("2_camscript")
+
+[node name="Ground2" type="StaticBody3D" parent="." unique_id=1861459673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.560638, -1.1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground2" unique_id=1404374196]
+mesh = SubResource("BoxMesh_ground")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground2" unique_id=3098795]
+shape = SubResource("BoxShape3D_ground")
